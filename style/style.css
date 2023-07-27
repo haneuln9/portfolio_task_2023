@@ -1,0 +1,154 @@
+.allbg {
+    background:url(../images/7598163.jpg)no-repeat fixed 75% ;
+    background-size:cover;
+    width: 100vw; height:100vh;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+    position:relative;
+    /* overflow:hidden; */
+}
+.allbh .bg1 {
+    background:url(../images/bg2.png) repeat-x;
+    position:absolute;
+    top:900px;
+    transform:rotate(-10deg);
+}
+.allbh .bg2 {
+    background:rgba(0,0,0,0.8)url(../images/bg3.png) repeat-x;
+    position:absolute;
+    top:900px;
+    transform:rotate(10deg);
+}
+.allbg .profile {
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+    padding:200px 0;
+}
+.allbg .profile .user {
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;}
+.allbg .profile .user .photo {
+    width:200px; height:200px;
+    border:6px solid #fff;
+    border-radius:50%;
+    overflow:hidden;
+}
+.allbg .profile .user .photo img {
+    width:100%;
+}
+.allbg .profile .user h1 {
+    font-size:2rem;
+    font-weight:700;
+    margin-bottom:20px;
+}
+.allbg .profile .user .roding {
+    height:10px; width:300px;
+    border-radius:5px;
+    background:#fff;
+    overflow:hidden;
+    margin-bottom:20px;
+    transition:all ease 2s;
+}
+.allbg .profile p {
+    font-weight:700;
+    letter-spacing:-0.04em;
+    margin-bottom:20px;
+}
+/*-------------------------------------------------------------------------*/
+@keyframes loding {
+    0% {}
+    100%{}
+}
+
+
+.allbg .profile .user .photo {
+    animation:move_up 1s infinite linear alternate ;
+}
+@keyframes move_up {
+    0% {transform:translateY(0) ;}
+    100% {transform:translateY(-10px);}
+}
+/*--------------------------------------------------------------------------*/
+/* .allbg .profile .loding {}
+.allbg .profile .loding span {} */
+/*------------------------------------------------------------------------*/
+.allbg .profile .sns {
+    display:flex;
+    flex-flow:row nowrap;
+}
+.allbg .profile .sns .git {width:25px; height:25px;}
+.allbg .profile .sns .git img {width:100%;}
+.allbg .profile .sns .nt {width:25px; height:25px; margin:0 20px;}
+.allbg .profile .sns .nt img {width:100%;}
+.allbg .profile .sns .pf {width:25px; height:25px;}
+.allbg .profile .sns .pf img {width:100%;}
+/*-------------------------------------------------------------------------*/
+.allbg .menu {
+    margin-bottom: 500px;
+    width:30px; height:30px;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:space-between;
+}
+.allbg .menu span {
+    width:100%; height:5px;
+    background:#000;
+    border-radius: 5px;
+}
+/*--------------------------------------------------------------------------*/
+.allbg .line {}
+.allbg .line .bg1 {}
+.allbg .line .bg2 {
+    background:rgba(0,0,0,0.8);
+}
+/*----------------------------------------------------------------------------*/
+.allbg .content {
+    width: 1260px; margin:0 auto;
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+    justify-content:center;
+}
+.allbg .content .item {
+    margin-right:20px;;
+
+}
+.allbg .content .item .item_img {    background:url(../images/bg.jpg) 50% 50%;
+    background-size:150%;
+    border-radius:70px 70px 0 0;
+    height:250px;
+}
+.allbg .content .item .coke {
+    background-color: #fff;
+    /* width:100%; height:100%; */
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+    padding: 20px 20px;
+}
+.allbg .content .item .coke h1 {
+    font-weight: 700;
+    margin-bottom:10px;
+}
+.allbg .content .item .coke h2 {
+    margin-bottom:10px;
+}
+.allbg .content .item .coke p {}
+/*---------------------------------------------------------------------------*/
+.allbg footer {
+    height:550px;
+    text-align:center;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+    justify-content:center;
+}
+.allbg footer p {
+    font-size:2rem;
+    color:#fff;
+    margin-bottom:20px;
+    font-weight:500;
+}
